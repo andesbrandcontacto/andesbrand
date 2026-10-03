@@ -3,549 +3,586 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Andes Brand Social Partner – Transforma tu Negocio con Contenido Estratégico</title>
-  <meta name="description" content="Andes Brand: transformamos tu negocio con videos estratégicos. Recibe 3 a 5 propuestas pensadas para vender más, captar clientes y potenciar tu marca.">
-  <meta name="theme-color" content="#000000">
-  <meta property="og:title" content="Andes Brand – Transforma tu Negocio con Videos">
-  <meta property="og:description" content="Estrategia de contenido que vende. Potencia tu negocio hoy.">
+  <title>Andes Brand Social Partner | Potencia tu negocio con video estratégico</title>
+  <meta name="description" content="Andes Brand ayuda a negocios a crecer con estrategia, contenido y videos que venden. Recibe propuestas pensadas para tu negocio.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:title" content="Andes Brand Social Partner">
+  <meta property="og:description" content="Transformamos negocios con contenido y videos estratégicos.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0a0a0a;
-      --panel:#121214;
-      --panel-2:#1a1a1d;
-      --line:#2a2a2d;
-      --ink:#ffffff;
-      --mut:#a0a0a0;
-      --mut-2:#d0d0d0;
-      --gold:#f2b632;
-      --gold-2:#ffc94d;
-      --glass:rgba(242,182,50,.14);
-      --glass-2:rgba(255,255,255,.04);
-      --accent:#00d9ff;
+    :root {
+      --bg: #090909;
+      --bg-2: #121214;
+      --panel: #141416;
+      --panel-2: #1a1a1d;
+      --line: rgba(255,255,255,.08);
+      --ink: #f5f5f5;
+      --mut: #a5a5a5;
+      --mut-2: #d4d4d4;
+      --gold: #f2b632;
+      --gold-2: #ffce5d;
+      --blue: #61d7ff;
+      --glass: rgba(242,182,50,.12);
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
       background:
-        radial-gradient(circle at 80% 10%, rgba(242,182,50,.12), transparent 25%),
-        radial-gradient(circle at 10% 70%, rgba(0,217,255,.08), transparent 30%),
+        radial-gradient(circle at 80% 5%, rgba(242,182,50,.14), transparent 22%),
+        radial-gradient(circle at 15% 75%, rgba(97,215,255,.12), transparent 28%),
         var(--bg);
-      color:var(--ink);
-      font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    button{font:inherit}
-    .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, textarea { font: inherit; }
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:20;
-      backdrop-filter:blur(16px);
-      background:rgba(10,10,10,.6);
-      border-bottom:1px solid rgba(242,182,50,.15);
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(9,9,9,.7);
+      border-bottom: 1px solid rgba(255,255,255,.05);
     }
 
-    nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      min-height:80px;
-      gap:20px;
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 80px;
+      gap: 20px;
     }
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:16px;
-      font-weight:800;
-      letter-spacing:-.02em;
-      font-size:1.15rem;
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
-    .brand-logo{
-      width:32px;
-      height:32px;
-      background:linear-gradient(135deg, #f2b632, #ffcf66);
-      border-radius:6px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:900;
-      font-size:18px;
-      color:#0a0a0a;
-      box-shadow:0 8px 20px rgba(242,182,50,.3);
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      border-radius: 8px;
+      color: #0a0a0a;
+      background: linear-gradient(135deg, var(--gold), var(--gold-2));
+      box-shadow: 0 12px 28px rgba(242,182,50,.25);
+      font-size: 1.1rem;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:14px 26px;
-      border-radius:8px;
-      border:1px solid rgba(242,182,50,.25);
-      background:rgba(242,182,50,.08);
-      color:var(--ink);
-      font-weight:700;
-      transition:.25s cubic-bezier(.4,0,.2,1);
-      cursor:pointer;
+    .brand-word {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.2rem;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      font-size: clamp(1.1rem, 2vw, 1.8rem);
+      line-height: 1;
+      color: #fff;
     }
 
-    .btn:hover{
-      background:rgba(242,182,50,.15);
-      transform:translateY(-2px);
+    .brand-word .alt { color: #f7f7f7; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 26px;
+      border-radius: 12px;
+      border: 1px solid rgba(242,182,50,.2);
+      background: rgba(255,255,255,.04);
+      color: var(--ink);
+      font-weight: 700;
+      transition: .25s ease;
+      cursor: pointer;
+      box-shadow: 0 18px 30px rgba(0,0,0,.15);
     }
 
-    .btn.primary{
-      background:linear-gradient(135deg, #f2b632, #ffb700);
-      color:#0a0a0a;
-      border-color:transparent;
-      font-weight:800;
-      box-shadow:0 16px 40px rgba(242,182,50,.35);
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(242,182,50,.38);
     }
 
-    .btn.primary:hover{
-      box-shadow:0 20px 50px rgba(242,182,50,.45);
-      transform:translateY(-2px);
+    .btn.primary {
+      background: linear-gradient(135deg, var(--gold), #f0a918);
+      color: #0d0d0d;
+      border-color: transparent;
+      font-weight: 900;
+      box-shadow: 0 22px 48px rgba(242,182,50,.38);
     }
 
-    .btn.secondary{background:rgba(255,255,255,.06)}
-
-    .hero{
-      padding:80px 0 50px;
-      position:relative;
-      overflow:hidden;
+    .btn.primary:hover {
+      box-shadow: 0 26px 56px rgba(242,182,50,.44);
     }
 
-    .hero-wrap{
-      display:grid;
-      grid-template-columns:1.3fr .7fr;
-      align-items:center;
-      gap:48px;
+    .hero {
+      padding: 70px 0 38px;
+      position: relative;
+      overflow: hidden;
     }
 
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      background:rgba(242,182,50,.1);
-      border:1px solid rgba(242,182,50,.3);
-      color:var(--gold);
-      padding:10px 16px;
-      border-radius:999px;
-      font-size:.85rem;
-      font-weight:700;
-      letter-spacing:.05em;
-      margin-bottom:20px;
-      text-transform:uppercase;
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.35fr .8fr;
+      gap: 40px;
+      align-items: center;
     }
 
-    .badge::before{
-      content:"";
-      width:6px;
-      height:6px;
-      border-radius:50%;
-      background:var(--gold);
-      box-shadow:0 0 12px rgba(242,182,50,.8);
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(242,182,50,.08);
+      border: 1px solid rgba(242,182,50,.2);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
     }
 
-    h1{
-      margin:0;
-      font-weight:950;
-      letter-spacing:-.065em;
-      line-height:0.95;
-      color:var(--ink);
-      font-size:clamp(3.2rem,8vw,7rem);
-      margin-bottom:20px;
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 14px rgba(242,182,50,.9);
     }
 
-    .hero h1{
-      background:linear-gradient(135deg, #ffffff 0%, #f2b632 50%, #ffffff 100%);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      background-clip:text;
+    h1, h2, h3, h4 {
+      margin: 0;
+      letter-spacing: -0.065em;
+      line-height: 0.97;
+      color: var(--ink);
     }
 
-    .subheading{
-      color:var(--mut-2);
-      font-size:clamp(1.2rem, 2.5vw, 1.5rem);
-      max-width:50ch;
-      margin:0 0 28px;
-      font-weight:500;
-      line-height:1.4;
+    .hero h1 {
+      max-width: 15ch;
+      font-size: clamp(3.2rem, 7vw, 6.8rem);
+      font-weight: 950;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #fff 0%, #f9d36d 28%, #f2b632 55%, #fff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .highlight{color:var(--gold);font-weight:800}
-
-    .cta-primary{
-      display:flex;
-      flex-wrap:wrap;
-      gap:16px;
-      align-items:center;
-      margin-bottom:32px;
+    .subheading {
+      max-width: 52ch;
+      margin: 0 0 28px;
+      font-size: clamp(1.12rem, 2.2vw, 1.5rem);
+      color: var(--mut-2);
+      font-weight: 500;
+      line-height: 1.45;
     }
 
-    .cta-primary .btn{padding:16px 32px;font-size:1.05rem}
+    .highlight { color: var(--gold); font-weight: 800; }
 
-    .trust-text{
-      color:var(--mut);
-      font-size:.95rem;
-      display:flex;
-      align-items:center;
-      gap:8px;
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
     }
 
-    .hero-visual{
-      position:relative;
-      height:500px;
-      border-radius:20px;
-      background:linear-gradient(180deg, rgba(242,182,50,.08), rgba(0,217,255,.06));
-      border:1px solid rgba(242,182,50,.2);
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+    .microcopy {
+      color: var(--mut);
+      font-size: .95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .hero-visual::before{
-      content:"";
-      position:absolute;
-      inset:0;
+    .microcopy .check {
+      display: inline-grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(97,215,255,.10);
+      border: 1px solid rgba(97,215,255,.25);
+      color: var(--blue);
+      font-size: .85rem;
+      font-weight: 800;
+    }
+
+    .hero-visual {
+      position: relative;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(242,182,50,.09), rgba(97,215,255,.05));
+      border: 1px solid rgba(242,182,50,.18);
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,.22);
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        radial-gradient(circle at 30% 40%, rgba(242,182,50,.15), transparent 50%),
-        radial-gradient(circle at 70% 60%, rgba(0,217,255,.1), transparent 50%);
+        radial-gradient(circle at 30% 30%, rgba(242,182,50,.12), transparent 26%),
+        radial-gradient(circle at 70% 60%, rgba(97,215,255,.12), transparent 38%);
     }
 
-    .hero-content{
-      position:relative;
-      z-index:2;
-      width:85%;
-      height:420px;
-      background:linear-gradient(180deg, rgba(20,20,25,.9), rgba(10,10,15,.95));
-      border-radius:16px;
-      border:1px solid rgba(242,182,50,.15);
-      padding:28px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      box-shadow:0 40px 80px rgba(0,0,0,.6);
+    .screen {
+      position: relative;
+      z-index: 2;
+      width: 82%;
+      height: 390px;
+      background: linear-gradient(180deg, rgba(17,17,18,.95), rgba(10,10,12,.98));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      box-shadow: 0 30px 70px rgba(0,0,0,.5);
     }
 
-    .hero-stat{
-      background:rgba(242,182,50,.1);
-      border:1px solid rgba(242,182,50,.2);
-      border-radius:14px;
-      padding:16px 20px;
+    .screen::before {
+      content: "";
+      position: absolute;
+      inset: 18px 18px auto 18px;
+      height: 170px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(242,182,50,.22), rgba(97,215,255,.08));
+      border: 1px solid rgba(255,255,255,.05);
     }
 
-    .hero-stat-number{
-      font-size:2.8rem;
-      font-weight:900;
-      color:var(--gold);
-      letter-spacing:-.06em;
-      line-height:1;
-      margin-bottom:4px;
+    .play {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #ffcf66);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 40px rgba(242,182,50,.32);
+      z-index: 3;
     }
 
-    .hero-stat-text{
-      color:var(--mut);
-      font-size:.95rem;
+    .play::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 18px solid rgba(15,15,15,.92);
+      margin-left: 6px;
     }
 
-    .play-icon{
-      width:64px;
-      height:64px;
-      border-radius:50%;
-      background:linear-gradient(135deg, #f2b632, #ffcf66);
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 20px 40px rgba(242,182,50,.35);
-      z-index:3;
+    .mini-card {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      top: 18px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 16px;
+      padding: 16px 18px;
+      backdrop-filter: blur(10px);
+      z-index: 4;
     }
 
-    .play-icon::before{
-      content:"";
-      width:0;
-      height:0;
-      border-left:18px solid rgba(15,15,20,.9);
-      border-top:10px solid transparent;
-      border-bottom:10px solid transparent;
-      margin-left:4px;
+    .mini-card strong {
+      display: block;
+      color: var(--gold);
+      font-size: 2rem;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      margin-bottom: 4px;
     }
 
-    .stats-band{
-      background:linear-gradient(180deg, rgba(242,182,50,.08), rgba(0,217,255,.04));
-      border-top:1px solid rgba(242,182,50,.15);
-      border-bottom:1px solid rgba(242,182,50,.15);
-      margin-top:10px;
+    .mini-card span {
+      color: var(--mut);
+      font-size: .85rem;
     }
 
-    .stats-grid{
-      padding:48px 0;
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-      gap:32px;
+    .stats-band {
+      background: linear-gradient(180deg, rgba(242,182,50,.07), rgba(97,215,255,.04));
+      border-top: 1px solid rgba(255,255,255,.06);
+      border-bottom: 1px solid rgba(255,255,255,.06);
     }
 
-    .stat-item{padding:8px 0}
-
-    .stat-number{
-      font-size:clamp(2.8rem, 7vw, 4.8rem);
-      letter-spacing:-.08em;
-      font-weight:950;
-      line-height:1;
-      color:var(--gold);
-      margin-bottom:10px;
+    .stats-grid {
+      padding: 42px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
     }
 
-    .stat-label{
-      color:var(--mut);
-      font-size:1.1rem;
-      max-width:24ch;
-      font-weight:500;
+    .stat-number {
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      letter-spacing: -0.08em;
+      font-weight: 950;
+      line-height: 1;
+      color: var(--gold);
+      margin-bottom: 10px;
     }
 
-    section{padding:96px 0}
-    .section-header{margin-bottom:32px}
-
-    .section-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      background:rgba(242,182,50,.08);
-      border:1px solid rgba(242,182,50,.2);
-      color:var(--gold);
-      padding:8px 14px;
-      border-radius:6px;
-      font-size:.8rem;
-      font-weight:700;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      margin-bottom:16px;
+    .stat-label {
+      color: var(--mut);
+      font-size: 1.05rem;
+      max-width: 22ch;
     }
 
-    h2{
-      font-size:clamp(2.4rem, 5.5vw, 4.2rem);
-      font-weight:950;
-      letter-spacing:-.065em;
-      line-height:1;
-      margin:0 0 16px;
-      max-width:18ch;
+    section {
+      padding: 88px 0;
     }
 
-    .section-lead{
-      color:var(--mut-2);
-      font-size:1.15rem;
-      max-width:62ch;
-      margin:0;
-      font-weight:500;
-      line-height:1.5;
+    .section-badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(242,182,50,.08);
+      border: 1px solid rgba(242,182,50,.2);
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .72rem;
+      font-weight: 800;
     }
 
-    .cards-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-      gap:20px;
-      margin-top:32px;
+    h2 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.06em;
+      margin: 0 0 18px;
+      max-width: 18ch;
     }
 
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-      border:1px solid rgba(242,182,50,.12);
-      border-radius:16px;
-      padding:32px 26px;
-      box-shadow:0 20px 40px rgba(0,0,0,.15);
-      transition:.3s ease;
+    .section-lead {
+      color: var(--mut-2);
+      font-size: 1.12rem;
+      line-height: 1.55;
+      max-width: 62ch;
+      margin: 0;
     }
 
-    .card:hover{
-      border-color:rgba(242,182,50,.3);
-      transform:translateY(-4px);
-      box-shadow:0 28px 50px rgba(242,182,50,.15);
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
     }
 
-    .card h3{
-      font-size:1.5rem;
-      font-weight:800;
-      margin:0 0 12px;
-      letter-spacing:-.03em;
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 18px;
+      padding: 30px 22px;
+      box-shadow: 0 20px 30px rgba(0,0,0,.12);
+      transition: .25s ease;
     }
 
-    .card p{margin:0;color:var(--mut);font-size:1.05rem;line-height:1.5}
-
-    .process-steps{
-      list-style:none;
-      padding:0;
-      margin:32px 0 0;
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-      gap:20px;
-      counter-reset:step;
+    .card:hover {
+      border-color: rgba(242,182,50,.28);
+      transform: translateY(-4px);
     }
 
-    .process-steps li{
-      counter-increment:step;
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-      border:1px solid rgba(242,182,50,.12);
-      border-radius:16px;
-      padding:32px 28px;
+    .card h3 {
+      font-size: 1.5rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
     }
 
-    .process-steps li::before{
-      content:counter(step);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      width:48px;
-      height:48px;
-      border-radius:50%;
-      background:linear-gradient(135deg, rgba(242,182,50,.2), rgba(242,182,50,.08));
-      border:2px solid rgba(242,182,50,.3);
-      color:var(--gold);
-      font-weight:900;
-      font-size:1.4rem;
-      margin-bottom:20px;
+    .card p {
+      margin: 0;
+      color: var(--mut);
+      font-size: 1rem;
+      line-height: 1.5;
     }
 
-    .process-steps h3{
-      font-size:1.5rem;
-      font-weight:800;
-      margin:0 0 10px;
-      letter-spacing:-.03em;
+    .process-steps {
+      list-style: none;
+      padding: 0;
+      margin: 32px 0 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      counter-reset: step;
     }
 
-    .process-steps p{margin:0;color:var(--mut);font-size:1.05rem}
-
-    .upgrade-box{
-      background:linear-gradient(135deg, rgba(242,182,50,.1), rgba(0,217,255,.06));
-      border:1px solid rgba(242,182,50,.25);
-      border-radius:20px;
-      padding:36px 32px;
-      display:grid;
-      grid-template-columns:1fr auto;
-      align-items:center;
-      gap:28px;
+    .process-steps li {
+      counter-increment: step;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 18px;
+      padding: 30px 24px;
     }
 
-    .upgrade-title{
-      font-size:1rem;
-      font-weight:900;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      color:var(--gold);
-      margin-bottom:8px;
-      display:block;
+    .process-steps li::before {
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(242,182,50,.08);
+      border: 1px solid rgba(242,182,50,.25);
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: 18px;
     }
 
-    .upgrade-box h3{
-      font-size:2.2rem;
-      font-weight:950;
-      letter-spacing:-.05em;
-      margin:0 0 12px;
+    .process-steps h3 {
+      font-size: 1.5rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
     }
 
-    .upgrade-box p{margin:0;color:var(--mut-2);font-size:1.1rem;max-width:58ch}
-
-    .final-cta{
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-      border:1px solid rgba(242,182,50,.15);
-      border-radius:20px;
-      padding:40px 32px;
+    .process-steps p {
+      margin: 0;
+      color: var(--mut);
+      font-size: 1rem;
     }
 
-    .final-cta h2{max-width:16ch;margin-bottom:12px}
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin:24px 0 28px;
+    .upgrade-box {
+      background: linear-gradient(135deg, rgba(242,182,50,.08), rgba(97,215,255,.05));
+      border: 1px solid rgba(242,182,50,.2);
+      border-radius: 22px;
+      padding: 30px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
     }
 
-    .chip{
-      background:rgba(242,182,50,.06);
-      color:var(--ink);
-      border:1px solid rgba(242,182,50,.15);
-      border-radius:8px;
-      padding:12px 18px;
-      font-weight:600;
-      cursor:pointer;
-      transition:.2s ease;
-      font-size:.95rem;
+    .upgrade-box .label {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .75rem;
+      font-weight: 800;
     }
 
-    .chip:hover{
-      border-color:rgba(242,182,50,.35);
-      background:rgba(242,182,50,.12);
-      transform:translateY(-1px);
+    .upgrade-box h3 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+      margin: 0 0 10px;
     }
 
-    .chip.active{
-      background:linear-gradient(135deg, rgba(242,182,50,.25), rgba(242,182,50,.15));
-      border-color:rgba(242,182,50,.5);
-      color:var(--gold-2);
+    .upgrade-box p {
+      margin: 0;
+      color: var(--mut-2);
+      font-size: 1.08rem;
+      max-width: 58ch;
     }
 
-    .cta-row{
-      display:flex;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:14px;
+    .final-cta {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(242,182,50,.16);
+      border-radius: 24px;
+      padding: 32px 24px;
     }
 
-    .mail-link{
-      color:var(--mut-2);
-      font-weight:600;
-      transition:.2s ease;
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0 28px;
     }
 
-    .mail-link:hover{color:var(--gold)}
+    .chip {
+      background: rgba(255,255,255,.03);
+      color: var(--ink);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .2s ease;
+    }
 
-    footer{
-      padding:36px 0 56px;
-      color:var(--mut);
-      font-size:.95rem;
-      border-top:1px solid rgba(242,182,50,.1);
+    .chip:hover {
+      border-color: rgba(242,182,50,.32);
+      transform: translateY(-1px);
+    }
+
+    .chip.active {
+      background: rgba(242,182,50,.12);
+      border-color: rgba(242,182,50,.38);
+      color: var(--gold-2);
+    }
+
+    .cta-final-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .mail {
+      color: var(--mut-2);
+      font-weight: 600;
+    }
+
+    .mail:hover {
+      color: var(--gold);
+    }
+
+    footer {
+      padding: 32px 0 52px;
+      color: var(--mut);
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: .95rem;
     }
 
     @media (max-width: 900px){
-      .hero-wrap{grid-template-columns:1fr}
-      .hero-visual{height:380px}
-      .hero-content{height:300px}
-      .upgrade-box{grid-template-columns:1fr}
+      .hero-wrap { grid-template-columns: 1fr; }
+      .hero-visual { height: 400px; }
+      .screen { width: 78%; height: 300px; }
+      .upgrade-box { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 540px){
-      nav{min-height:70px;padding:10px 0}
-      .brand{font-size:.95rem;gap:10px}
-      .btn{width:100%}
-      .cta-primary{display:grid;width:100%}
-      .cta-row{display:grid;width:100%}
-      .chip{flex:1 1 45%}
-      .hero{padding:50px 0 30px}
-      section{padding:68px 0}
-      .upgrade-box{padding:28px 20px}
-      .final-cta{padding:28px 20px}
-      .hero-visual{height:320px}
-      .hero-content{height:250px;padding:20px}
-      h1{font-size:2.2rem}
-      h2{font-size:1.8rem}
+      .brand-word { font-size: 1.1rem; }
+      nav { min-height: 70px; }
+      .btn { width: 100%; }
+      .cta-row, .cta-final-row { display: grid; width: 100%; }
+      .cta-row .btn, .cta-final-row .btn { width: 100%; }
+      .chip { flex: 1 1 42%; }
+      .hero { padding-top: 48px; }
+      section { padding: 70px 0; }
+      .hero-visual { height: 300px; }
+      .screen { width: 85%; height: 220px; }
+      .mini-card strong { font-size: 1.5rem; }
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 2rem; }
     }
   </style>
 </head>
@@ -553,9 +590,9 @@
   <div class="topbar">
     <div class="wrap">
       <nav>
-        <div class="brand">
-          <div class="brand-logo">A</div>
-          <span>Andes Brand</span>
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
         </div>
         <a class="btn secondary wa" href="#">Iniciar transformación</a>
       </nav>
@@ -565,29 +602,25 @@
   <header class="hero">
     <div class="wrap hero-wrap">
       <div>
-        <div class="badge">Solución de contenido estratégico</div>
+        <div class="eyebrow">Solución de contenido estratégico</div>
         <h1>Transforma tu negocio con videos que venden.</h1>
-        <p class="subheading">No es solo contenido. Es <span class="highlight">estrategia comercial</span> que convierte visitantes en clientes y posiciona tu marca.</p>
-        
-        <div class="cta-primary">
+        <p class="subheading">No es solo contenido. Es <span class="highlight">estrategia comercial</span> que convierte interés en clientes, fortalece tu marca y multiplica tus resultados.</p>
+        <div class="cta-row">
           <a class="btn primary wa" href="#">Recibir 3 a 5 propuestas ahora</a>
         </div>
-        <div class="trust-text">
-          <span>✓</span>
-          <span>Sin compromiso. Propuestas claras y concretas en 48h.</span>
+        <div class="microcopy">
+          <span class="check">✓</span>
+          <span>Sin compromiso. Propuestas concretas y listas para tu negocio.</span>
         </div>
       </div>
 
       <div class="hero-visual">
-        <div class="play-icon"></div>
-        <div class="hero-content">
-          <div class="hero-stat">
-            <div class="hero-stat-number">+48%</div>
-            <div class="hero-stat-text">Incremento en engagement comprobado.</div>
-          </div>
-          <div style="color:var(--mut);font-size:.95rem;text-align:center;">
-            Cuentas que transformamos mes a mes
-          </div>
+        <div class="mini-card">
+          <strong>+48%</strong>
+          <span>aumento en engagement en cuentas que trabajamos</span>
+        </div>
+        <div class="screen">
+          <div class="play"></div>
         </div>
       </div>
     </div>
@@ -595,15 +628,15 @@
 
   <div class="stats-band">
     <div class="wrap stats-grid">
-      <div class="stat-item">
+      <div>
         <div class="stat-number">13 a 24k</div>
-        <div class="stat-label">vistas promedio por video que producimos.</div>
+        <div class="stat-label">vistas promedio por video en contenido que producimos.</div>
       </div>
-      <div class="stat-item">
+      <div>
         <div class="stat-number">+48%</div>
         <div class="stat-label">de aumento en engagement en cuentas que trabajamos.</div>
       </div>
-      <div class="stat-item">
+      <div>
         <div class="stat-number">3 a 5</div>
         <div class="stat-label">propuestas estratégicas, personalizadas y listas para producir.</div>
       </div>
@@ -613,31 +646,29 @@
   <main>
     <section>
       <div class="wrap">
-        <div class="section-header">
-          <span class="section-badge">El problema que resolvemos</span>
-          <h2>¿Por qué tu negocio aún no vende con redes?</h2>
-        </div>
-        <p class="section-lead">La mayoría de negocios invierte en contenido sin estrategia. Publicas, pero nadie compra. Aquí está la diferencia: nosotros hacemos contenido que cierra ventas.</p>
+        <span class="section-badge">El problema que resolvemos</span>
+        <h2>¿Por qué tu negocio no vende con redes?</h2>
+        <p class="section-lead">La mayoría de negocios invierte en contenido sin estrategia. Publicas, pero no conviertes. El problema no es solo la creatividad: es la falta de una dirección comercial clara.</p>
 
         <div class="cards-grid">
           <article class="card">
-            <h3>📊 Vistas sin conversión</h3>
-            <p>Publicas, tienes likes, pero los números no se traducen en clientes reales que compran.</p>
+            <h3>Vistas sin conversión</h3>
+            <p>Mucho contenido, pocas ventas. Tus videos generan atención, pero no intención de compra.</p>
           </article>
 
           <article class="card">
-            <h3>🎬 No sabes qué grabar</h3>
-            <p>Terminas improvisando o dejando de publicar por falta de dirección clara y consistente.</p>
+            <h3>No sabes qué grabar</h3>
+            <p>Terminas improvisando o dejando de publicar por falta de claridad, estrategia y dirección.</p>
           </article>
 
           <article class="card">
-            <h3>🏷️ Compites por precio</h3>
-            <p>Sin identidad en tu contenido, el cliente elige por presupuesto. Ganan los más baratos.</p>
+            <h3>Compites por precio</h3>
+            <p>Sin identidad visual ni mensaje claro, el cliente opta por la opción más barata y tu marca pierde valor.</p>
           </article>
 
           <article class="card">
-            <h3>⏰ Inversión sin ROI</h3>
-            <p>Gastas tiempo, dinero y esfuerzo en videos que no generan resultados medibles.</p>
+            <h3>Inversión sin rentabilidad</h3>
+            <p>Gastas tiempo y dinero en contenido que no genera ventas ni posicionamiento real para tu negocio.</p>
           </article>
         </div>
       </div>
@@ -645,23 +676,21 @@
 
     <section>
       <div class="wrap">
-        <div class="section-header">
-          <span class="section-badge">Nuestro método</span>
-          <h2>Cómo potenciamos tu negocio.</h2>
-        </div>
+        <span class="section-badge">Cómo trabajamos</span>
+        <h2>Una estrategia que potencia tu negocio.</h2>
 
         <ol class="process-steps">
           <li>
             <h3>Cuéntanos tu negocio</h3>
-            <p>Un mensaje por WhatsApp con qué vendes, a quién y qué resultados buscas lograr.</p>
+            <p>Envíanos un mensaje por WhatsApp con qué vendes, a quién te diriges y qué quieres lograr.</p>
           </li>
           <li>
             <h3>Recibes propuestas concretas</h3>
-            <p>3 a 5 ideas estratégicas, pensadas para vender y conectar con tu cliente ideal.</p>
+            <p>3 a 5 ideas estratégicas, pensadas para vender más y hacer crecer tu marca con claridad.</p>
           </li>
           <li>
             <h3>Producimos y publicamos</h3>
-            <p>Guion, grabación, edición, diseño y estrategia de publicación con enfoque comercial total.</p>
+            <p>Guion, grabación, edición, diseño y publicación con enfoque comercial y de resultados reales.</p>
           </li>
         </ol>
       </div>
@@ -669,30 +698,28 @@
 
     <section>
       <div class="wrap">
-        <div class="section-header">
-          <span class="section-badge">Especialistas por rubro</span>
-          <h2>Hablamos tu lenguaje de ventas.</h2>
-        </div>
+        <span class="section-badge">Especialistas por rubro</span>
+        <h2>Hablamos tu lenguaje de ventas.</h2>
 
         <div class="cards-grid">
           <article class="card">
             <h3>Tiendas exclusivas</h3>
-            <p>Producto premium requiere contenido premium. Posicionamos tu marca como la mejor opción.</p>
+            <p>Tu producto es premium y tu contenido debe serlo también. Diseñamos mensajes que potencian el valor de tu marca.</p>
           </article>
 
           <article class="card">
             <h3>Automotoras</h3>
-            <p>Stock parado es dinero perdido. Producimos videos que impulsan ventas y aceleran cierre de negocios.</p>
+            <p>Videos que traducen interés en ventas. Te ayudamos a mover stock, aumentar cierre y mejorar tu volumen comercial.</p>
           </article>
 
           <article class="card">
             <h3>Agroturismo</h3>
-            <p>Tu experiencia es única. Hacemos que se sienta desde el primer segundo en cada video.</p>
+            <p>Convertimos la experiencia de tu lugar en contenido que provoca deseo, interés y visita real.</p>
           </article>
 
           <article class="card">
             <h3>Turismo en naturaleza</h3>
-            <p>Cada video debe despertar el deseo de vivir esa experiencia. Eso es lo que hacemos.</p>
+            <p>Hacemos que cada video recuerde la sensación de vivir la experiencia antes de llegar.</p>
           </article>
         </div>
       </div>
@@ -702,9 +729,9 @@
       <div class="wrap">
         <div class="upgrade-box">
           <div>
-            <span class="upgrade-title">Para empresas en crecimiento</span>
-            <h3>¿Ya vendes bien pero quieres escalar?</h3>
-            <p>Operamos tus campañas de video marketing a través de un modelo de comisión. Pagos sobre resultados: cobramos cuando tú vendes más.</p>
+            <span class="label">Para negocios en crecimiento</span>
+            <h3>¿Ya vendes bien y quieres escalar?</h3>
+            <p>Operamos campañas de contenido y marketing con estructura comercial. Pagas por resultados y acompañamiento estratégico real.</p>
           </div>
           <a class="btn primary wa-growth" href="#">Evaluar escalamiento</a>
         </div>
@@ -715,10 +742,10 @@
       <div class="wrap">
         <div class="final-cta">
           <span class="section-badge">Comienza ahora</span>
-          <h2>Transforma tu negocio este mes.</h2>
+          <h2>Potencia tu negocio con el contenido correcto.</h2>
           <p class="section-lead">Elige tu sector y recibe propuestas personalizadas por WhatsApp en las próximas 48 horas.</p>
 
-          <div class="chips" role="group" aria-label="Selecciona tu sector">
+          <div class="chips" role="group" aria-label="Selecciona tu rubro">
             <button class="chip" type="button">Tienda exclusiva</button>
             <button class="chip" type="button">Automotora</button>
             <button class="chip" type="button">Agroturismo</button>
@@ -726,9 +753,9 @@
             <button class="chip" type="button">Mi sector</button>
           </div>
 
-          <div class="cta-row">
+          <div class="cta-final-row">
             <a class="btn primary wa" href="#">Recibir propuestas por WhatsApp →</a>
-            <a class="mail-link" href="mailto:contactoandesbrand@gmail.com">O escribir a contactoandesbrand@gmail.com</a>
+            <a class="mail" href="mailto:contactoandesbrand@gmail.com">contactoandesbrand@gmail.com</a>
           </div>
         </div>
       </div>
@@ -737,9 +764,9 @@
 
   <footer>
     <div class="wrap">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;">
-        <div class="brand-logo">A</div>
-        <strong>Andes Brand</strong>
+      <div class="brand-wrap" style="margin-bottom: 12px;">
+        <div class="brand-mark">A</div>
+        <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
       </div>
       © 2026 Andes Brand Social Partner. Transformamos negocios con contenido estratégico.
     </div>
@@ -749,26 +776,26 @@
     const WA = "56927078086";
     let selectedNiche = "";
 
-    function buildWhatsAppText() {
-      const base = "Hola Andes Brand, quiero transformar mi negocio con videos estratégicos";
-      return selectedNiche ? base + " (Sector: " + selectedNiche + ")." : base + ".";
+    function buildText() {
+      const base = "Hola Andes Brand, quiero potenciar mi negocio con videos estratégicos y propuestas personalizadas";
+      return selectedNiche ? base + " (sector: " + selectedNiche + ")." : base + ".";
     }
 
     function updateLinks() {
-      const msg = buildWhatsAppText();
+      const msg = buildText();
       const url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
       document.querySelectorAll(".wa").forEach(el => el.href = url);
 
-      const growthURL = "https://wa.me/" + WA + "?text=" + encodeURIComponent("Hola Andes Brand, mi negocio ya vende bien y quiero evaluar una estrategia de escalamiento con videos.");
+      const growthURL = "https://wa.me/" + WA + "?text=" + encodeURIComponent("Hola Andes Brand, mi negocio ya vende bien y quiero evaluar una estrategia de escalamiento con video marketing y contenido estratégico.");
       const growthBtn = document.querySelector(".wa-growth");
-      if(growthBtn) growthBtn.href = growthURL;
+      if (growthBtn) growthBtn.href = growthURL;
     }
 
     document.querySelectorAll(".chip").forEach(button => {
       button.addEventListener("click", () => {
-        const isActive = button.classList.contains("active");
+        const wasActive = button.classList.contains("active");
         document.querySelectorAll(".chip").forEach(el => el.classList.remove("active"));
-        if (!isActive) {
+        if (!wasActive) {
           button.classList.add("active");
           selectedNiche = button.textContent.trim();
         } else {
