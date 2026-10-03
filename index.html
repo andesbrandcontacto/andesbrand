@@ -99,6 +99,24 @@
       font-size: 1.1rem;
     }
 
+    .brand-logo-real {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 58px;
+      border-radius: 8px;
+      background: transparent;
+      border: 0;
+      filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+    }
+
+    .brand-logo-real svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
     .brand-word {
       display: inline-flex;
       align-items: baseline;
@@ -591,9 +609,10 @@
     }
 
     @media (max-width: 540px){
-      .brand-word { font-size: 1.1rem; }
+      .brand-word { font-size: 1rem; }
       .brand-logo-small { width: 28px; height: 28px; font-size: .85rem; }
       .brand-mark { width: 32px; height: 32px; font-size: 1rem; }
+      .brand-logo-real { width: 120px; height: 42px; }
       nav { min-height: 70px; }
       .btn { width: 100%; }
       .cta-row, .cta-final-row { display: grid; width: 100%; }
@@ -619,9 +638,13 @@
     <div class="wrap">
       <nav>
         <div class="brand-wrap">
-          <div class="brand-logo-small">A</div>
+          <div class="brand-logo-real" aria-label="Andes Brand logo" role="img">
+            <svg viewBox="0 0 220 78" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="50%" y="27" text-anchor="middle" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" letter-spacing="6" fill="#ffffff">ANDES</text>
+              <text x="50%" y="57" text-anchor="middle" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" letter-spacing="5" fill="#ffffff">BRAND</text>
+            </svg>
+          </div>
           <div class="brand-mark">A</div>
-          <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
         </div>
         <a class="btn secondary wa" href="#">Iniciar transformación</a>
       </nav>
@@ -794,9 +817,12 @@
   <footer>
     <div class="wrap">
       <div class="brand-wrap" style="margin-bottom: 12px;">
-        <div class="brand-logo-small">A</div>
-        <div class="brand-mark">A</div>
-        <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
+        <div class="brand-logo-real" aria-label="Andes Brand logo" role="img" style="width: 135px; height: 45px;">
+          <svg viewBox="0 0 220 78" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="50%" y="27" text-anchor="middle" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" letter-spacing="6" fill="#ffffff">ANDES</text>
+            <text x="50%" y="57" text-anchor="middle" font-size="18" font-weight="700" font-family="Inter, Arial, sans-serif" letter-spacing="5" fill="#ffffff">BRAND</text>
+          </svg>
+        </div>
       </div>
       © 2026 Andes Brand Social Partner. Transformamos negocios con contenido estratégico.
     </div>
