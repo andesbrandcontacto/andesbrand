@@ -69,7 +69,21 @@
     .brand-wrap {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
+    }
+
+    .brand-logo-small {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: #000;
+      border: 1.5px solid #f5f5f5;
+      font-weight: 900;
+      color: #f5f5f5;
+      font-size: .95rem;
+      letter-spacing: -0.08em;
     }
 
     .brand-mark {
@@ -340,19 +354,24 @@
       gap: 30px;
     }
 
+    .stat-item {
+      text-align: center;
+    }
+
     .stat-number {
-      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
       letter-spacing: -0.08em;
       font-weight: 950;
       line-height: 1;
       color: var(--gold);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .stat-label {
       color: var(--mut);
-      font-size: 1.05rem;
-      max-width: 22ch;
+      font-size: 1rem;
+      max-width: 28ch;
+      margin: 0 auto;
     }
 
     section {
@@ -515,6 +534,7 @@
       flex-wrap: wrap;
       gap: 12px;
       margin: 24px 0 28px;
+      justify-content: center;
     }
 
     .chip {
@@ -544,6 +564,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 14px;
+      justify-content: center;
     }
 
     .mail {
@@ -571,6 +592,8 @@
 
     @media (max-width: 540px){
       .brand-word { font-size: 1.1rem; }
+      .brand-logo-small { width: 28px; height: 28px; font-size: .85rem; }
+      .brand-mark { width: 32px; height: 32px; font-size: 1rem; }
       nav { min-height: 70px; }
       .btn { width: 100%; }
       .cta-row, .cta-final-row { display: grid; width: 100%; }
@@ -583,6 +606,11 @@
       .mini-card strong { font-size: 1.5rem; }
       h1 { font-size: 2.4rem; }
       h2 { font-size: 2rem; }
+      .stat-item { text-align: center; }
+      .stats-grid { text-align: center; }
+      .chips { justify-content: center; }
+      .final-cta h2 { text-align: center; }
+      .section-lead { text-align: center; margin: 0 auto; }
     }
   </style>
 </head>
@@ -591,6 +619,7 @@
     <div class="wrap">
       <nav>
         <div class="brand-wrap">
+          <div class="brand-logo-small">A</div>
           <div class="brand-mark">A</div>
           <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
         </div>
@@ -628,15 +657,15 @@
 
   <div class="stats-band">
     <div class="wrap stats-grid">
-      <div>
+      <div class="stat-item">
         <div class="stat-number">13 a 24k</div>
         <div class="stat-label">vistas promedio por video en contenido que producimos.</div>
       </div>
-      <div>
+      <div class="stat-item">
         <div class="stat-number">+48%</div>
         <div class="stat-label">de aumento en engagement en cuentas que trabajamos.</div>
       </div>
-      <div>
+      <div class="stat-item">
         <div class="stat-number">3 a 5</div>
         <div class="stat-label">propuestas estratégicas, personalizadas y listas para producir.</div>
       </div>
@@ -765,6 +794,7 @@
   <footer>
     <div class="wrap">
       <div class="brand-wrap" style="margin-bottom: 12px;">
+        <div class="brand-logo-small">A</div>
         <div class="brand-mark">A</div>
         <div class="brand-word"><span>Andes</span><span class="alt">Brand</span></div>
       </div>
